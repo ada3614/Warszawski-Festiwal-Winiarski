@@ -1,0 +1,95 @@
+.contact {
+    background-color: $dark-color;
+    padding: 3% 10%;
+
+    @media(max-width: 1024px) {
+        padding: 10%;
+    }
+
+    &__content {
+        display: flex;
+        margin: 2rem 0;
+
+        @media(max-width: 460px) {
+            flex-direction: column;
+        }
+    }
+
+    &__address {
+        margin-left: 2rem;
+
+        @media(max-width: 460px) {
+            margin: 2rem auto;
+        }
+
+    }
+
+    &__txt {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    &__form {
+        width: 80%;
+        background-color: $seconadry-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 5%;
+
+        @media(max-width: 460px) {
+            width: 100%;
+        }
+    }
+
+    &__form-logo {
+        margin-bottom: 3rem;
+        width: 30%;
+
+        @media(max-width: 460px) {
+            width: 60%;
+            margin: 1rem;
+        }
+    }
+
+    &__form-content {
+        width: 100%;
+    }
+
+    &__fields {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    &__input {
+        width: 100%;
+        height: 2rem;
+        background-color: $light-color;
+        font-size: 1rem;
+        padding-left: 1rem;
+        border: none;
+        border: 2px $light-color solid;
+
+        &:focus {
+            outline: none;
+            border: 2px $main-color solid;
+        }
+
+        &--textarea {
+            height: 14rem;
+            width: 100%;
+            font-family: $font-secondary;
+
+            &:focus {
+                outline: none;
+                border: 2px $main-color solid;
+            }
+        }
+    }
+}
+
+strong {
+    color: $main-color;
+}

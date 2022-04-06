@@ -1,0 +1,63 @@
+.cennik {
+    background-color: $dark-color;
+    padding: 3% 10%;
+    height: 80vh;
+    @media(max-width: 1024px) {
+        padding: 10% 10% 20%;
+    }
+    &__content {
+        width: 80%;
+        margin: auto;
+    }
+    &__item {
+        margin-top: 3rem;
+        margin: 4rem  auto auto;
+        width: 100%;
+    }
+    &__header {
+        position: relative;
+    }
+    &__title {
+        font-size: 1.2rem;
+        line-height: 1;
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        &--description {
+            font-size: 0.8rem;
+            font-weight: normal;
+        }
+    }
+
+
+    &__table {
+        width: 100%;
+        border-collapse: separate;
+        padding-top: 1rem;
+    }
+    &__row {
+        font-size: 1rem;
+        font-weight: 900;
+        color: $seconadry-color;
+        background-color: $light-color;
+        transition: background-color 0.6s;
+        &:hover {
+            background-color: $main-color;
+        }
+    }
+
+    &__info {
+        padding: 0.8rem;
+    }
+    &__info:nth-child(2) {
+        text-align: right;
+    }
+    &__exception {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+
+}
